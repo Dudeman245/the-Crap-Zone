@@ -166,17 +166,11 @@ function displayComments() {
 displayComments();
 
 // deleted dudeman
-function deleteComment(index) {
-  let coms = JSON.parse(localStorage.getItem('guestComments') || '[]');
 
-  coms.splice(index, 1); // remove the comment
-  localStorage.setItem('guestComments', JSON.stringify(coms));
-
-  displayComments(); // refresh list
-}
   </script>
 </body>
 </html>
+
 
 
 
