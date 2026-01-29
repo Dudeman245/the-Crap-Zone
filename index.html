@@ -94,26 +94,8 @@ Its a PILE FREAKING CRAP(it's very bad)
 
 </div>
 
-<div class="centorb" style="background-color:rgb(89, 85, 207);">
-<h1>The Comments</h1>
-<input id="name" placeholder="Your name">
-<textarea id="comment" placeholder="add your suggestions"></textarea>
-<button onclick="addComment()">Post Comment</button>
-<ul id="comments"></ul>
 
-</div>
-
-<!-- // deleted dudeman
-function deleteComment(index) {
-  let coms = JSON.parse(localStorage.getItem('guestComments') || '[]');
-
-  coms.splice(index, 1); // remove the comment
-  localStorage.setItem('guestComments', JSON.stringify(coms));
-
-  displayComments(); // refresh list
-}
--->
-<!---by chatgpt the code in script tag--->
+<
 <script>
   // ===== Audio pause/resume when tab hidden =====
 const audio = document.getElementById('mpp3');
@@ -145,41 +127,10 @@ function replaceTo() {
   document.body.innerHTML = document.body.innerHTML.replace(/\bto\b/gi, "2"); 
 }
 
-// ===== Guestbook =====
-function addComment() {
-  const n = document.getElementById('name').value.trim();
-  const c = document.getElementById('comment').value.trim();
-  if (!n || !c) return;
-
-  let coms = JSON.parse(localStorage.getItem('guestComments') || '[]');
-  coms.push({n, c, t: new Date().toLocaleString()});
-  localStorage.setItem('guestComments', JSON.stringify(coms));
-
-  document.getElementById('name').value = '';
-  document.getElementById('comment').value = '';
-
-  displayComments();
-}
-
-// Display comments
-function displayComments() {
-  const list = document.getElementById('comments');
-  list.innerHTML = '';
-  let coms = JSON.parse(localStorage.getItem('guestComments') || '[]');
-  coms.forEach((x, i) => {
-    list.innerHTML += `<li><b>${x.n}</b> (${x.t}): ${x.c} <button onclick="deleteComment(${i})">Delete</button></li>`;
-  });
-}
-
-
-// Load existing comments on page load
-displayComments();
-
-// deleted dudeman
-
   </script>
 </body>
 </html>
+
 
 
 
