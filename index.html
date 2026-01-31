@@ -7,170 +7,123 @@
       background-color: black;
       background-image: url("crappy/background.png");
       font-family: "Comic Sans MS", sans-serif;
-   
     }
     a {
       font-size:30px;
     } 
-button {
- color:green;
-background-color:black;
-  font-family:"Comic Sans MS", sans-serif;
-}
-.centorb{
-
-width:900px;
-margin:0 auto;
-height:800px;
-
-}
-
-
+    button {
+      color:green;
+      background-color:black;
+      font-family:"Comic Sans MS", sans-serif;
+    }
+    .centorb {
+      width:900px;
+      margin:0 auto;
+      height:800px;
+    }
   </style>
 </head>
+
 <marquee style="color:rgb(201, 214, 205); font-size:50px; font-family:impact;"
  direction="left"
  onmouseover="this.stop();"
  onmouseout="this.start()"
  scrollamount= "20">
+WELCOME TO THE CRAP ZONE. <span id="crop"></span>!!!
+</marquee>
 
-WELCOME TO THE CRAP ZONE. <span id="crop"></span>!!!</marquee>
 <body>
-
-  <div class="centorb" style=" background-color: rgb(124, 233, 252); font-size:20px; height:700px;">
+  <div class="centorb" style="background-color: rgb(124, 233, 252); font-size:20px; height:700px;">
     <center>
-    <h2>Welcome to the Crap Zone</h2>
-    <p>the crappiest website to modern day<p>
-     
-<p>Welcome to my website i am Aeron Vin i'm a ten years old and i can use html.
-I know HTML because i want to code the cool way,and i want some suggestions of what should i put in my website.
-</p>
+      <h2>Welcome to the Crap Zone</h2>
+      <p>the crappiest website to modern day<p>
+      <p>Welcome to my website i am Aeron Vin i'm a ten years old and i can use html.
+      I know HTML because i want to code the cool way,and i want some suggestions of what should i put in my website.
+      </p>
       <img src="crappy/sexy nerd.jpg"
-     alt="the creator of the website"
-     width="200"
-     height="250">
+           alt="the creator of the website"
+           width="200"
+           height="250">
+      <p>(This website is probably intentionally weird or crappy)</p>
+      <!--dont worry lad. spoilers but this is a rickroll not a virus lad. good thing lad-->
+      <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0&list=RDoHg5SJYRHA0&start_radio=1">Pirated GTA 6</a>
+      <form>
+        <select style="height:30px;">
+          <option>how is your experience?</option>
+          <option>Its cool</option>
+          <option>Its alright </option>
+          <option>Its not bad</option>
+          <option>Its a PILE FREAKING CRAP(it's very bad)</option>
+        </select>
+      </form>
+    </center>
+  </div>
 
-      
-<p>(This website is probably intentionally weird or crappy)</p>
-<!--dont worry lad. spoilers but this is a rickroll not a virus lad. good thing lad-->
-<a href="https://www.youtube.com/watch?v=oHg5SJYRHA0&list=RDoHg5SJYRHA0&start_radio=1">Pirated GTA 6<a>
-<form>
-<select style="height:30px;">
-<option>how is your experience?</option>
-<option>Its cool</option>
-<option>Its alright </option>
-<option>Its not bad</option>
-<option>
-Its a PILE FREAKING CRAP(it's very bad)
-</option>
-</select>
-</form>
-
-</center>
- </div>
-<div class="centorb" style="color:rgb(201, 214, 205); background:red;">
-<center>
+  <div class="centorb" style="color:rgb(201, 214, 205); background:red;">
+    <center>
       <h4>the HOT GARBAGE</h4>
-</center>
-      <audio id="mpp3"  loop controls>
-  <source src="crappy/crapzong.mp3">
-</audio>
-<br>
+    </center>
+    <audio id="mpp3" loop controls>
+      <source src="crappy/crapzong.mp3">
+    </audio>
+    <br>
+    <a href="https://www.youtube.com/shorts/XF6yfKmgWGY">Some random short i found entertaining</a>
+    <br>
+    <button style="height:60px; width:60px;" onclick="replaceTo()">the fun button</button>
+    <center>
+      <img src="crappy/legodego.jpg" alt="lego build" width="200" height="250">
+      <p>my oldest brother made this lego build</p>
+    </center>
+  </div>
 
-<a href="https://www.youtube.com/shorts/XF6yfKmgWGY">Some random short i found entertaining</a>
-<br>
-<button style="height:60px; width:60px;" onclick="replaceTo()" >the fun button</button>
-  
-  <center>
-    <img
-  src="crappy/legodego.jpg"
-  alt="lego build"
-  width="200"
-  height="250">
-  <p>my oldest brother made this lego build</p>
-  </center>
-  
-  
-
-</div>
   <div class="centorb" style="background-color: rgb(41, 108, 217); text-align: center;">
     <h1>Personal Facts that no one cares!</h1>
     <h2>Did you know</h2>
     <h3 id="factA"></h3>
-</div>
-  
+  </div>
 
-<script>
-   // ===== Audio pause/resume when tab hidden =====
-const audio = document.getElementById('mpp3');
-let wasPlaying = false;
+  <script>
+    // ===== Audio pause/resume when tab hidden =====
+    const audio = document.getElementById('mpp3');
+    let wasPlaying = false;
 
-document.addEventListener('visibilitychange', () => {
-  if (document.hidden) {
-    wasPlaying = !audio.paused;
-    audio.pause();
-  } else if (wasPlaying) {
-    audio.play();
-  }
-});
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) {
+        wasPlaying = !audio.paused;
+        audio.pause();
+      } else if (wasPlaying) {
+        audio.play();
+      }
+    });
 
-// ===== Random words display =====
-const cropWords = [
-  'also try <a style="color:rgb(201, 214, 205); font-size:50px; font-family:elephant;" href="https://burnedwebsite.vercel.app">burnedpopcorn!</a> its a better website than here and i like his crap',
-  "THE REASON WHY YOUR COMPUTER BURNS",
-  "THE CRAPPIEST WEBSITE TO MODERN DAY",
-  "the person who made this website has bad font choices",
-  "TRY MY MUSIC, ITS NOT BAD (i'm lying)",
-  "THIS WEBSITE IS ABSOLUTELY HOT GARBAGE",
-  "THE PERSON USING THIS WEBSITE IS A WEIRDO"
-];
-document.getElementById("crop").innerHTML = cropWords[Math.floor(Math.random() * cropWords.length)];
+    // ===== Random words display =====
+    const cropWords = [
+      'also try <a style="color:rgb(201, 214, 205); font-size:50px; font-family:elephant;" href="https://burnedwebsite.vercel.app">burnedpopcorn!</a> its a better website than here and i like his crap',
+      "THE REASON WHY YOUR COMPUTER BURNS",
+      "THE CRAPPIEST WEBSITE TO MODERN DAY",
+      "the person who made this website has bad font choices",
+      "TRY MY MUSIC, ITS NOT BAD (i'm lying)",
+      "THIS WEBSITE IS ABSOLUTELY HOT GARBAGE",
+      "THE PERSON USING THIS WEBSITE IS A WEIRDO"
+    ];
+    document.getElementById("crop").innerHTML = cropWords[Math.floor(Math.random() * cropWords.length)];
 
-// ===== Replace 'to' with '2' in body safely =====
-function replaceTo() { 
-  // only replace text nodes inside paragraphs and headings, not entire body
-  const elems = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6');
-  elems.forEach(el => {
-    el.innerHTML = el.innerHTML.replace(/\bto\b/gi, "2");
-  });
-}
+    // ===== Replace 'to' with '2' safely =====
+    function replaceTo() { 
+      const elems = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6');
+      elems.forEach(el => {
+        el.innerHTML = el.innerHTML.replace(/\bto\b/gi, "2");
+      });
+    }
 
-// ===== Random personal facts =====
-const facts = [
- "My Mom and tita (for people who don't understand Tagalog it's aunts) used to know about coding HTML in college. But today she forgot how to code.",
- "One of my relatives worked (probably one of the animators) in Jujutsu Kaisen. I don't watch it, but it's cool to have a relative in it.",
- "I'm from the Philippines but I barely speak my native language Tagalog. I hope I get better at it.",
- "My tita Camille knows and is a teacher of Taekwondo, which is a type of martial arts. My older brother is currently learning Taekwondo (I'm scared)."
-];
-document.getElementById("factA").innerHTML = facts[Math.floor(Math.random() * facts.length)];
+    // ===== Random personal facts =====
+    const facts = [
+      "My Mom and tita (for people who don't understand Tagalog it's aunts) used to know about coding HTML in college. But today she forgot how to code.",
+      "One of my relatives worked (probably one of the animators) in Jujutsu Kaisen. I don't watch it, but it's cool to have a relative in it.",
+      "I'm from the Philippines but I barely speak my native language Tagalog. I hope I get better at it.",
+      "My tita Camille knows and is a teacher of Taekwondo, which is a type of martial arts. My older brother is currently learning Taekwondo (I'm scared)."
+    ];
+    document.getElementById("factA").innerHTML = facts[Math.floor(Math.random() * facts.length)];
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
