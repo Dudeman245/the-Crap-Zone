@@ -93,6 +93,14 @@ Its a PILE FREAKING CRAP(it's very bad)
   
 
 </div>
+  <div class="centorb" style="backround-color:rgb(41, 108, 217);">
+    <center>
+    <h1>Personal Facts that no one cares!</h1>
+    <h2>Did you know</h2>
+    <h3 id="factA"></h3>
+    </center>
+  </div>
+  
 
 <script>
   // ===== Audio pause/resume when tab hidden =====
@@ -124,10 +132,19 @@ document.getElementById("crop").innerHTML = words[Math.floor(Math.random() * wor
 function replaceTo() { 
   document.body.innerHTML = document.body.innerHTML.replace(/\bto\b/gi, "2"); 
 }
+const words = [
+ "My Mom and tita(for people who dont understand tagalog its aunts) used to know about coding Html in college But today she forgot about how to code",
+  "One of my Relative Work (probably one of the animators) in jujitsu kaisen,i dont watch it but its cool to have a relative of it",
+  "i'm From the philippines but i barely speak my native language Tagalog and i hope i get better at it",
+  "my tita camille knows and a teacher of tae kwon do  which is a type of martial arts, my older brother currently is learning how to tae kwon do (i'm scared)",
+];
+document.getElementById("factA").innerHTML = words[Math.floor(Math.random() * words.length)];
 
+  
   </script>
 </body>
 </html>
+
 
 
 
