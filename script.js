@@ -79,3 +79,4 @@
       "My tita Camille knows and is a teacher of Taekwondo, which is a type of martial arts. My older brother is currently learning Taekwondo (I'm scared)."
     ];
     document.getElementById("factA").innerHTML = facts[Math.floor(Math.random() * facts.length)];
+
