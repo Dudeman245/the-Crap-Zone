@@ -21,17 +21,27 @@
       margin:0 auto;
       height:800px;
     }
-    
+    .scrolly {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: scroll 8s linear infinite;
+}
+
+@keyframes scroll {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
   </style>
 </head>
 
-<marquee style="color:rgb(201, 214, 205); font-size:50px; font-family:impact;"
- direction="left"
+<p class="scrolly"  style="color:rgb(201, 214, 205); font-size:50px; font-family:impact;"
+
  onmouseover="this.stop();"
  onmouseout="this.start()"
- scrollamount= "20">
+ >
 WELCOME TO THE CRAP ZONE. <span id="crop"></span>!!!
-</marquee>
+</p>
 
 <body>
   <div class="centorb" style="background-color: rgb(124, 233, 252); font-size:20px; height:700px;">
