@@ -32,10 +32,3 @@ function replaceTo() {
 }
 
 // ===== Random personal facts =====
-const facts = [
-  "My Mom and tita (for people who don't understand Tagalog it's aunts) used to know about coding HTML in college. But today she forgot how to code.",
-  "One of my relatives worked (probably one of the animators) in Jujutsu Kaisen. I don't watch it, but it's cool to have a relative in it.",
-  "I'm from the Philippines but I barely speak my native language Tagalog.",
-  "My tita Camille knows and is a teacher of Taekwondo, which is a type of martial arts. My older brother is currently learning Taekwondo (I'm scared)."
-];
-document.getElementById("factA").innerHTML = facts[Math.floor(Math.random() * facts.length)];
